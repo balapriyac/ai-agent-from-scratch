@@ -2,7 +2,7 @@
 
 A minimal example of an AI agent built directly against the Anthropic API, with no agent framework involved. 
 
-Here, `agent.py`: a single file containing a tool definition (an order lookup), the schema the model reads to decide when to call it, and an `Agent` class that runs the tool-calling loop and keeps conversation memory across calls.
+Here, `agent.py` is a single file containing a tool definition (an order lookup), the schema the model reads to decide when to call it, and an `Agent` class that runs the tool-calling loop and keeps conversation memory across calls.
 
 ### Setup
 
