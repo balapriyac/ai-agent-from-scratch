@@ -1,12 +1,10 @@
 # Building an AI Agent From Scratch
 
-A minimal example of an AI agent built directly against the Anthropic API, with no agent framework involved. Companion code for the article "How and Why to Build an AI Agent From Scratch in Python."
+A minimal example of an AI agent built directly against the Anthropic API, with no agent framework involved. 
 
-## What This Contains
+Here, `agent.py`: a single file containing a tool definition (an order lookup), the schema the model reads to decide when to call it, and an `Agent` class that runs the tool-calling loop and keeps conversation memory across calls.
 
-- `agent.py`: a single file containing a tool definition (an order lookup), the schema the model reads to decide when to call it, and an `Agent` class that runs the tool-calling loop and keeps conversation memory across calls.
-
-## Setup
+### Setup
 
 1. Install Python 3.10 or newer.
 2. Install the dependency:
@@ -21,7 +19,7 @@ A minimal example of an AI agent built directly against the Anthropic API, with 
    export ANTHROPIC_API_KEY="your-key-here"
    ```
 
-## Running It
+### Running It
 
 ```bash
 python agent.py
