@@ -1,6 +1,6 @@
 # Building an AI Agent From Scratch
 
-A minimal example of an AI agent built directly against the Anthropic API, with no agent framework involved. 
+A minimal example of an AI agent built directly against the Anthropic API, with no agent framework involved. Code for the article [How (and Why) to Build an AI Agent from Scratch in Python](https://machinelearningmastery.com/how-and-why-to-build-an-ai-agent-from-scratch-in-python/)
 
 Here, `agent.py` is a single file containing a tool definition (an order lookup), the schema the model reads to decide when to call it, and an `Agent` class that runs the tool-calling loop and keeps conversation memory across calls.
 
@@ -25,5 +25,5 @@ Here, `agent.py` is a single file containing a tool definition (an order lookup)
 python agent.py
 ```
 
-This runs two calls against the same `Agent` instance. The first asks about order #4471 directly. The second asks a follow-up question, "And when will it arrive?", which only makes sense if the earlier exchange is still available. This demonstrates why `self.messages` persists across calls instead of resetting each time.
+This runs two calls against the same `Agent` instance. The first asks about order #4471 directly. The second asks a follow-up question, "And when will it arrive?", which only makes sense if the earlier exchange is still available. This shows why `self.messages` persists across calls instead of resetting each time.
 
